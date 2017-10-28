@@ -1,18 +1,13 @@
 package com.lqh.lichao;
 
-/**
- * 栈
- * @author Administrator
- *
- */
-public class StackX {
-	private char[] stackArray;
+public class StackY {
+	private int[] stackArray;
 	private int maxSize;
 	private int top;
 	
-	public StackX(int s) {
+	public StackY(int s) {
 		maxSize = s;
-		stackArray = new char[maxSize];
+		stackArray = new int[maxSize];
 		top = -1;
 	}
 	
@@ -20,7 +15,7 @@ public class StackX {
 	 * 压入数据
 	 * @param value
 	 */
-	public void push(char value) {
+	public void push(int value) {
 		stackArray[++top] = value;
 	}
 	
@@ -28,7 +23,7 @@ public class StackX {
 	 * 弹出数据
 	 * @return
 	 */
-	public char pop() {
+	public int pop() {
 		return stackArray[top--];
 	}
 	
@@ -36,7 +31,7 @@ public class StackX {
 	 * 查看数据
 	 * @return
 	 */
-	public char peek() {
+	public int peek() {
 		return stackArray[top];
 	}
 	
@@ -69,7 +64,7 @@ public class StackX {
 	 * @param n
 	 * @return
 	 */
-	public char peekN(int n) {
+	public int peekN(int n) {
 		return stackArray[n];
 	}
 	

@@ -36,6 +36,9 @@ public class InToPost {
 				case ')':
 					gotParen(ch);
 					break;
+				default:
+					output = output + ch;	
+					break;
 			}
 		}
 		while(!stack.isEmpty()) {
